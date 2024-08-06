@@ -1,3 +1,4 @@
+//Accept 5 employees name and salary and count average and total salary
 #include<stdio.h>
 void main(){
     int per1, per2, per3, per4, per5,avg,total_salary;

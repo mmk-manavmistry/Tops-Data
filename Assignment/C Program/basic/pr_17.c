@@ -1,3 +1,4 @@
+//Calculate person’s insurance premium based on salary
 #include<stdio.h>
 void main(){
     int salary;

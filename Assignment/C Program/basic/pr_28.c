@@ -1,3 +1,4 @@
+//Convert years into days and months
 #include<stdio.h>
 void main(){
    int years,month,days;

@@ -1,3 +1,4 @@
+//Accept 5 expense from user and find average of expense
 #include<stdio.h>
 void main(){
     int per1, per2, per3, per4, per5,total_Expense;

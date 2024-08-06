@@ -1,3 +1,4 @@
+//26.Convert temperature Fahrenheit to Celsius
 #include<stdio.h>
 void main(){
     float farenhit,celcius;

@@ -1,3 +1,4 @@
+//Find Area of Square formula : a = a2
 #include<stdio.h>
 void main(){
     int number,area;

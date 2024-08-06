@@ -1,3 +1,4 @@
+//Find circumference of Triangle formula : triangle = a + b + c
 #include<stdio.h>
 void main(){
     int a,b,c,triangle;

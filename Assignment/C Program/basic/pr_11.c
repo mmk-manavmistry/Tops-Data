@@ -1,3 +1,4 @@
+//Find circumference of square formula : C = 4 * a
 #include<stdio.h>
 void main(){
     int area,length;

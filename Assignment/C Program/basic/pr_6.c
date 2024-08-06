@@ -1,3 +1,4 @@
+//Find area of Triangle Formula : A = 1/2 × b × h
 #include<stdio.h>
 void main(){
     int b,trianglearea,h;

@@ -1,3 +1,4 @@
+//Calculate person’s Annual salary
 #include<stdio.h>
 void main(){
     int mon_salary,annual_salary;

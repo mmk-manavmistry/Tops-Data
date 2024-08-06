@@ -1,3 +1,4 @@
+//Find ascii value of given number
 #include<stdio.h>
 void main(){
     int number;

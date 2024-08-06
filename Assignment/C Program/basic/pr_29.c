@@ -1,3 +1,4 @@
+//Convert minutes into seconds and hours
 #include<stdio.h>
 void main(){
     int minute,second,hour;
