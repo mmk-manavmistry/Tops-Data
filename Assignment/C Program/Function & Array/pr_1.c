@@ -3,10 +3,10 @@
 int fm();
 void main() {
     int size;
-    printf("Enter array size: \n");
+    printf("\nEnter array size: \n");
     scanf("%d", &size);
     int arr[size];
-    printf("Enter array elements:\n");
+    printf("\nEnter %d array elements:\n",size);
     for (int i = 1; i <=size; i++) {
         scanf("%d", &arr[i]);
     }
@@ -18,7 +18,7 @@ void main() {
     printf("\nMaximum element is: %d\n", max);
 }
 int fm(int arr[],int size){
-    int max = arr[0];
+    int max = arr[1];
      for (int i = 1; i<=size; i++) {
         if (arr[i] > max) {
             max = arr[i];
