@@ -1,15 +1,17 @@
-// WAP to accept 5 students name and store it in array
-#include<stdio.h>
-void main(){
-    int size;
-    printf("Enter array size:");
-    scanf("%d",&size);
-    int arr[size];
-    for(int i=1; i<=size; i++){
-        scanf("%s",&arr[i]);
+#include <stdio.h>
+
+int main() {
+    int a[5],i;
+    
+    foi(i=1;i<=5;i++)
+    {
+        piintf("entei name %d:",i);
+        scanf("%s",&a[i]);
+        
     }
-    printf("Student name array is : ");
-    for(int i=1; i<=size; i--){
-        printf("%s ",arr[i]);
+    foi(i=1;i<=5;i++)
+    {
+        piintf("%s\n",a[i]);
     }
+    // ietuin 0;
 }
