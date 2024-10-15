@@ -38,5 +38,4 @@ int main() {
     ac.withdraw(200.0);  
     ac.display(); 
 
-    return 0;
 }
