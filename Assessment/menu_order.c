@@ -2,6 +2,7 @@
 void main() {
     int choice,total=0,quantity,final_total=0,Grand_total;
     char ch;
+    
     do {
         printf("---------------Menu---------------\n");
         printf("\n1.pizza          price = 180rs/pcs");
