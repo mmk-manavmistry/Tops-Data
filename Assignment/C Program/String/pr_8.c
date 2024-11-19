@@ -1,35 +1,20 @@
-// Write a program in C to count the total number of vowels or consonants in a string.
-
+// Write a program in C to read a sentence and replace lowercase characters with uppercase and vice versa.
 #include <stdio.h>
-#include <ctype.h> // For tolower() function
 
 int main() {
     char str[100];
-    int vowels = 0, consonants = 0;
-    int i = 0;
-    char ch;
+    int i;
 
-    printf("Enter a string: ");
-    scanf("%[^\n]s",str);
+    printf("Enter a sentence: ");
+    scanf("%[^\n]s", &str);
 
-    while (str[i] != '\0') {
-        ch = tolower(str[i]); 
-        if (ch >= 'a' && ch <= 'z') { 
-            switch (ch) {
-                case 'a':
-                case 'e':
-                case 'i':
-                case 'o':
-                case 'u':
-                    vowels++;
-                    break;
-                default:
-                    consonants++;
-                    break;
-            }
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 'a' + 'A';
+        } else if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] - 'A' + 'a';
         }
-        i++;
     }
-    printf("Total vowels: %d\n", vowels);
-    printf("Total consonants: %d\n", consonants);
+    printf("Modified sentence: %s\n", str);
+
 }

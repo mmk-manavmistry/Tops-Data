@@ -1,24 +1,25 @@
-// Write a program in C to print individual characters of a string in reverse order
-
+// WAP to find reverse of string using recursion
 #include <stdio.h>
-void revch(char str[], int length) {
-    for (int i = length - 1; i >= 0; i--) {
-        printf("%c\n", str[i]); 
+#include <string.h>
+void rs(char str[], int start, int end) {
+    if (start >= end) {
+        return; 
     }
+
+    char temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+
+    rs(str, start + 1, end - 1);
 }
 
 int main() {
     char str[100];
-    int length = 0;
 
     printf("Enter a string: ");
-    scanf("%[^\n]s", str); 
-
-    while (str[length] != '\0') {
-        length++;
-    }
-
-    printf("Characters in reverse order:\n");
-    revch(str, length); 
-
+    scanf("%s", str); 
+    int len = strlen(str);
+    rs(str, 0, len - 1);
+    printf("Reversed string: %s\n", str);
+    return 0;
 }

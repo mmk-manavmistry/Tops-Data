@@ -1,31 +1,32 @@
-// Write a program in C to extract a substring from a given string
+// Write a program in C to combine two strings manually
 #include <stdio.h>
 
-void extractSubstring(char source[], char destination[], int start, int length) {
-    int i;
-    for (i = 0; i < length && source[start + i] != '\0'; i++) {
-        destination[i] = source[start + i];
-    }
-    destination[i] = '\0';  
-}
-
 int main() {
-    char str[100], substring[100];
-    int start, length;
+    char str1[100], str2[50], combined[150];
+    int i = 0, j = 0;
 
-    printf("Enter a string: ");
-    scanf("%[^\n]s", str);
+    printf("Enter the first string: ");
+    scanf("%[^\n]s", str1);
 
-    printf("Enter the starting position: ");
-    scanf("%d", &start);
+    
+    getchar(); 
 
-    printf("Enter the length of the substring: ");
-    scanf("%d", &length);
+    printf("Enter the second string: ");
+    scanf("%[^\n]s", str2);
 
-    extractSubstring(str, substring, start, length);
+    while (str1[i] != '\0') {
+        combined[i] = str1[i];
+        i++;
+    }
 
-    printf("Extracted substring: %s\n", substring);
+    while (str2[j] != '\0') {
+        combined[i + j] = str2[j];
+        j++;
+    }
 
+    combined[i + j] = '\0'; // Null-terminate the combined string
+
+    printf("Combined string: %s\n", combined);
+
+    return 0;
 }
-
-

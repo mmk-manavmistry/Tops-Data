@@ -1,15 +1,17 @@
-//WAP to calculate swap 2 numbers with using of multiplication and division.
+//Accept 5 expense from user and find average of expense
 #include<stdio.h>
 void main(){
-    int a,b;
-    printf("Enter the value of a = ");
-    scanf("%d",&a);
-    printf("Enter the value of b = ");
-    scanf("%d",&b);
-    a = a * b;
-    b = a / b;
-    a = a / b;
-    printf("\n enter the value of a = %d", a);
-    printf("\n enter the value of b = %d", b);
-
+    int per1, per2, per3, per4, per5,total_Expense;
+    printf("\n Enter Expense of pr1 =");
+    scanf("%d",&per1);
+    printf("\n Enter Expense of pr2 =");
+    scanf("%d",&per2);
+    printf("\n Enter Expense of pr3 =");
+    scanf("%d",&per3);
+    printf("\n Enter Expense of pr4 =");
+    scanf("%d",&per4);
+    printf("\n Enter Expense of pr5 =");
+    scanf("%d",&per5);
+    total_Expense = per1+per2+per3+per4+per5;
+    printf("\n Total Expense = %d",total_Expense);
 }

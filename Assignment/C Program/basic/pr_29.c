@@ -1,11 +1,9 @@
-//Convert minutes into seconds and hours
+//WAP to convert years into days and days into years
 #include<stdio.h>
 void main(){
-    int minute,second,hour;
-    printf("Enter the minute = ");
-    scanf("%d",&minute);
-    second = minute * 60;
-    hour = minute / 60;
-    printf("\nsecond = %d",second);
-    printf("\nhour = %d",hour);
+    int days,year;
+    printf("enter the number of days = ");
+    scanf("%d",&days);
+    year = days / 365;
+    printf("\n year = %d",year);
 }

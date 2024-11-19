@@ -1,32 +1,35 @@
-// Write a program in C to count the total number of alphabets, digits and special characters in a string.
+// Write a program in C to count the total number of vowels or consonants in a string.
+
 #include <stdio.h>
+#include <ctype.h> // For tolower() function
 
 int main() {
     char str[100];
-    int alphabets = 0, digits = 0, special = 0;
+    int vowels = 0, consonants = 0;
     int i = 0;
+    char ch;
 
     printf("Enter a string: ");
-    scanf("%[^\n]s", str);
-
+    scanf("%[^\n]s",str);
 
     while (str[i] != '\0') {
-        if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) {
-            alphabets++;
-        }
-
-        else if (str[i] >= '0' && str[i] <= '9') {
-            digits++;
-        }
-
-        else if (str[i] != ' ' && str[i] != '\n' && str[i] != '\t') {
-            special++;
+        ch = tolower(str[i]); 
+        if (ch >= 'a' && ch <= 'z') { 
+            switch (ch) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    vowels++;
+                    break;
+                default:
+                    consonants++;
+                    break;
+            }
         }
         i++;
     }
-
-    printf("Total alphabets: %d\n", alphabets);
-    printf("Total digits: %d\n", digits);
-    printf("Total special characters: %d\n", special);
-
+    printf("Total vowels: %d\n", vowels);
+    printf("Total consonants: %d\n", consonants);
 }

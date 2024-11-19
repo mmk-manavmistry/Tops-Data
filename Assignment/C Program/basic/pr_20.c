@@ -1,12 +1,15 @@
-//Accept monthly salary from the user and deduct 10% insurance premium, 10% loan installment find out of remaining salary.
+//Accept 2 numbers from user and swap 2 numbers with using 3rd variable and without using 3rd variable
 #include<stdio.h>
 void main(){
-    int mon_salary,deducted_salary;
-    float rem_salary;
-    printf("Enter the persson monthaly salary = ");
-    scanf("%d",&mon_salary);
-    deducted_salary = mon_salary*0.1*0.1;
-    rem_salary = mon_salary-deducted_salary;
-    printf("remaining salary = %f\n",rem_salary);
+    int a,b;
+    printf("\n enter the value of a = ");
+    scanf("%d",&a);\\5
+    printf("\n enter the value of b = ");
+    scanf("%d",&b);\\6
+    a = a + b \\ a = 11
+    b = a - b \\ a = 11 b = 5
+    a = a - b \\ a = 6 b = 5
+    printf("\n enter the value of a = %d", a);
+    printf("\n enter the value of b = %d", b);
 
 }

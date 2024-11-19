@@ -1,9 +1,11 @@
-//26.Convert temperature Fahrenheit to Celsius
+//Convert years into days and months
 #include<stdio.h>
 void main(){
-    float farenhit,celcius;
-    printf("Enter the farenhit = ");
-    scanf("%f",&farenhit);
-    celcius = (farenhit - 32)*5/9;
-    printf("\n celcius = %f",celcius);
+   int years,month,days;
+   printf("Enter the year =");
+   scanf("%d",&years);
+   month = years * 12;
+   days = years * 365;
+   printf("\n month = %d",month);
+   printf("\n days = %d",days); 
 }

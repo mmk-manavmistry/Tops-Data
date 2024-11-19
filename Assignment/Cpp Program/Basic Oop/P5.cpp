@@ -1,30 +1,28 @@
-// Write a C++ program to create a class called Rectangle that has private member variables for length and width. Implement member functions to calculate the rectangle's area and perimeter.
+// Write a C++ program to implement a class called Circle that has private member variables for radius. Include member functions to calculate the circle's area and circumference.
 
 #include<iostream>
+#define PI 3.14
 using namespace std;
-class rectangle{
+class Area{
     private:
-    float l,w;
+    float radius;
     public:
-    int area(int l,int w) { 
-        int area;
-        area = l*w;
-        cout<<"Area is :"<<area<<endl;
+    int area(float radius){
+        float area;
+        area = (PI*radius*radius);
+        cout<<"Area: "<<area<<endl;
     }
-    int perimeter(int l,int w) {
-        int perimeter;
-        perimeter = 2*(l+w);
-        cout<<"Perimeter is :"<<perimeter<<endl;
+    int circumference(float radius){
+        float circumference;
+        circumference = (2*PI*radius);
+        cout<<"Circumference: "<<circumference<<endl;
     }
 };
 int main(){
-    rectangle rec;
-    float length,width;
-    cout<<"Enter a length for rectangle"<<endl;
-    cin>>length;
-    cout<<"Enter width for rectangle"<<endl;
-    cin>>width;
-    rec.area(length,width);
-    rec.perimeter(length,width);
-
+    Area a;
+    float rad;
+    cout<<"Enter radius: ";
+    cin>>rad;
+    a.area(rad);
+    a.circumference(rad);
 }

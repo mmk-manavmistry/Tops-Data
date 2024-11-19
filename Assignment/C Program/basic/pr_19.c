@@ -1,16 +1,14 @@
-//Calculate compound interest
+//Accept 2 numbers from user and swap 2 numbers with using 3rd variable and without using 3rd variable
 #include<stdio.h>
-#include<math.h>
 void main(){
-    float p,r,t;
-    float amount;
-    printf("Enter the value of principal amount = ");
-    scanf("%f",&p);
-    printf("\nEnter the value of rate = ");
-    scanf("%f",&r);
-    printf("\nEnter the period of times = ");
-    scanf("%f",&t);
-    amount=p*pow(1+r/100,t);
-    //amount = p*(1 + r/100)*t;
-    printf("\n amount = %f", amount);
+    int a,b,temp;
+    printf("enter the value of a = ");
+    scanf("%d",&a);
+    printf("enter the value of b = ");
+    scanf("%d",&b);
+    temp =  a;
+    a = b;
+    b = temp;
+    printf("enter the value of a = %d",a);
+    printf("\n enter the value of b = %d",b);
 }
